@@ -23,7 +23,7 @@ function Home() {
     const valid = isValidEmail(email)
     if(valid) {
       try {
-        const res = await axios.post(`${process.env.SERVER_URL}/add-webpage`, {
+        const res = await axios.post(`${process.env.REACT_APP_SERVER_URL}/add-webpage`, {
           url,
           email,
         });
